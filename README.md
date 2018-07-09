@@ -51,3 +51,39 @@ $minikube start
 
 the result wil be as following:
 <img src="https://github.com/Teckchun/-Kubernetes-Demo/blob/master/Assets/Images/kube-ctl-start-result.png?raw=true">
+
+### Let's use kubectl to actually deploy the hello-minikube sample application
+
+* we use the kubectl run command to deploy a sample image to our Kubernetes cluster. this command is wordth noting.
+```
+kubectl run hello-minikube --image=k8s.gcr.io/echoserver:1.10 --port=8080
+```
+* this command provide a simple and easy way to run a given docker image on your Kubernetes cluster
+
+### Now that's it's deployed. let's expose minikube sample application using the service command. this command will take the application which is running locally in our Kubernetes cluster and allow external IP address to access it
+
+```
+kubectl expose deployment hello-minikube --type=NodePort
+
+```
+
+### to see the status use 
+```
+kubectl get pod
+```
+<img src="https://github.com/Teckchun/-Kubernetes-Demo/blob/master/Assets/Images/kube-ctl-get-pod.png?raw=true">
+
+### to delete deployment use:
+```
+kubectl delete deployment hello-minikube 
+```
+
+### to stop local Minikube cluster and free up any resources when you're completed
+
+```
+minikube stop
+
+```
+
+
+
