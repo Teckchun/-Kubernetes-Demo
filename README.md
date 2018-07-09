@@ -18,7 +18,9 @@ For details about who's involved and how Kubernetes plays a role,
 read the CNCF [announcement].
 
 ----
-## Kubenetes Installation:
+# Kubenetes Installation:
+
+## Install kubectl
 
 1. Install kubectl binary via curl
 
@@ -34,4 +36,15 @@ chmod +x ./kubectl
 3. Move the library in to your PATH
 ```
  sudo mv ./kubectl /usr/local/bin/kubectl
+```
+## Install minikube
+
+1. Install 
+```
+curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.28.0/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
+```
+### Basic minikube commands
+* Start minikube
+```
+$minikube start
 ```
