@@ -48,5 +48,6 @@ curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.28.0/minik
 ```
 $minikube start
 ```
-the result would be as following:
-<img src="https://github.com/kubernetes/kubernetes/raw/master/logo/logo.png" width="100">
+
+the result wil be as following:
+<img src="https://github.com/Teckchun/-Kubernetes-Demo/blob/master/Assets/Images/kube-ctl-start-result.png?raw=true">
